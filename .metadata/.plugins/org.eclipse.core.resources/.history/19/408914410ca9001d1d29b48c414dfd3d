@@ -1,0 +1,24 @@
+<%@page import="gall.GallListDao"%>
+<%@page import="gall.GallList"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<%
+	request.setCharacterEncoding("utf-8");
+	
+	String name = request.getParameter("name");
+	String desc = request.getParameter("desc");
+	String cate = request.getParameter("cate");
+	String admin = (String)session.getAttribute("nick");
+	
+	GallList gall = new GallList();
+	gall.setName(name);
+	gall.setDesc(desc);
+	gall.setCategory(cate);
+	gall.setAdmin(admin);
+	gall.setType("minor");
+	
+	int result = GallListDao.getInstance().insert(gall);
+	if(result != 0)
+		response.sendRedirect("createSucc.jsp");
+%>

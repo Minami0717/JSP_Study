@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+	const date = new Date()
+	const hour = date.getHours()
+	
+	if(hour<12)
+		alert('오전')
+	else
+		alert('오후')
+</script>
+</head>
+<body>
+	<p>이제부터 제이쿼리를 다 같이 공부해보죠!!<br>
+
+    마우스로 글씨를 클릭해보세요!!</p>
+</body>
+</html>

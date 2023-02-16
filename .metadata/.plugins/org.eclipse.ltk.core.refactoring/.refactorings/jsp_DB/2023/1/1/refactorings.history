@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;mall&apos;&#x0D;&#x0A;- Original project: &apos;jsp_DB&apos;&#x0D;&#x0A;- Destination element: &apos;mall&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Post.java&#x0D;&#x0A;     PostDao.java" description="Copy files" element1="src/main/java/friend/Post.java" element2="src/main/java/friend/PostDao.java" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1672815984205" target="/JSP_Mall/src/main/java/mall" units="0" version="1.0"/>
+</session>
